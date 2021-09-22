@@ -1,0 +1,28 @@
+// Fonts
+// font-family: 'Alata', sans-serif; Weight 400
+// font-family: 'Josefin Sans', sans-serif; Weight 300
+
+// Colours
+$dk-gray: hsl(0, 0%, 55%);
+$vdk-gray: hsl(0, 0%, 41%);
+
+// Resets
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5rem;
+}
