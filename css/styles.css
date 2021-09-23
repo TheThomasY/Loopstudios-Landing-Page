@@ -25,7 +25,7 @@ body {
 
 .nav {
   width: 100%;
-  margin-top: 4rem;
+  padding-top: 4rem;
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -38,22 +38,69 @@ body {
           align-items: center;
 }
 
-.nav img {
+.nav #nav-logo {
   margin-left: 2.5rem;
   width: 14.5rem;
   height: auto;
+  z-index: 10;
 }
 
 .nav .nav-links {
-  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
 }
 
-.nav #nav-menu-mobile {
+.nav .nav-links li {
+  margin-top: 3rem;
+  margin-left: 2.5rem;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.nav .nav-links li:first-child {
+  margin-top: 19rem;
+}
+
+.nav #nav-open {
   width: 3rem;
   height: 3rem;
   margin-right: 2.5rem;
   color: #ffffff;
   cursor: pointer;
+  display: none;
+}
+
+.nav #nav-close {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 2.5rem;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.nav:not(.mobile-open) .nav-links {
+  display: none;
+}
+
+.nav:not(.mobile-open) #nav-open {
+  display: block;
+}
+
+.nav:not(.mobile-open) #nav-close {
+  display: none;
+}
+
+.scroll-lock {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
 }
 
 .hero {

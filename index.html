@@ -22,8 +22,8 @@
     <title>Frontend Mentor | Loopstudios landing page</title>
   </head>
   <body>
-    <div class="nav">
-      <img src="./images/logo.svg" alt="" />
+    <div id="navbar" class="nav">
+      <img id="nav-logo" src="./images/logo.svg" alt="Open nav bar icon" />
       <ul class="nav-links">
         <li>About</li>
         <li>Careers</li>
@@ -31,7 +31,12 @@
         <li>Products</li>
         <li>Support</li>
       </ul>
-      <ion-icon id="nav-menu-mobile" name="menu-outline"></ion-icon>
+      <ion-icon id="nav-open" name="menu-outline"></ion-icon>
+      <img
+        id="nav-close"
+        src="./images/icon-close.svg"
+        alt="Close nav bar icon"
+      />
     </div>
     <div class="hero">
       <h1 class="hero-text">Immersive experiences that deliver</h1>
@@ -157,5 +162,6 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>
