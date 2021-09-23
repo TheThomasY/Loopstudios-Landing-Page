@@ -110,6 +110,7 @@ body {
   overflow: hidden;
 }
 
+// Hero image and text
 .hero {
   height: 65rem;
   background-image: url(../images/mobile/image-hero.jpg);
@@ -147,15 +148,20 @@ section {
 
 // Specific sections
 .intro {
-  img {
+  .intro-img-mobile {
     max-width: 100%;
     height: auto;
     display: block;
+    margin: 0 auto;
+  }
+
+  .intro-img-desktop {
+    display: none;
   }
 
   h2 {
     margin-top: 5rem;
-    padding: 0 3.5rem;
+    padding: 0 2.5rem;
   }
 
   p {
@@ -165,6 +171,92 @@ section {
     line-height: 2.5rem;
   }
 }
+
+// ----- START OF MEDIA -----
+@media (min-width: 44em) {
+  .hero {
+    background-image: url(../images/desktop/image-hero.jpg);
+    backdrop-filter: brightness(0.5);
+    background-position: right;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .hero-text {
+    max-width: 65rem;
+    margin-top: 22rem;
+    margin-left: 16.5rem;
+    padding: 4.5rem;
+    z-index: 10;
+    // font-size: 7rem;
+    // font-size: 4rem;
+    font-size: unquote('clamp(4rem, 1.168rem + 4.05vw, 7rem)');
+  }
+
+  section {
+    width: 78%;
+    margin-top: 16rem;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .intro {
+    position: relative;
+
+    .intro-img-mobile {
+      display: none;
+    }
+
+    .intro-img-desktop {
+      width: 100%;
+      max-width: 73.5rem;
+      height: auto;
+      display: block;
+    }
+
+    .intro-text {
+      width: 55rem;
+      padding: 10rem 0 0 10rem;
+      position: absolute;
+      bottom: -0.1rem;
+      right: 0;
+      background-color: #ffffff;
+
+      h2 {
+        margin: 0;
+        padding: 0;
+        font-size: 4.5rem;
+      }
+
+      p {
+        margin: 3rem 0 0 0;
+        padding: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 61.31em) {
+  .hero {
+    justify-content: center;
+  }
+
+  .hero-text {
+    margin-left: 0;
+  }
+}
+// ----- END OF MEDIA -----
 
 .projects-section {
   h2 {
