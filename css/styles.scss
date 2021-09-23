@@ -32,9 +32,33 @@ body {
   font-family: 'Alata', sans-serif;
 }
 
+// Styles
+
 .nav {
-  display: none;
+  width: 100%;
+  margin-top: 4rem;
   position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  img {
+    margin-left: 2.5rem;
+    width: 14.5rem;
+    height: auto;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  #nav-menu-mobile {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 2.5rem;
+    color: #ffffff;
+    cursor: pointer;
+  }
 }
 
 .hero {
@@ -104,8 +128,28 @@ section {
     position: relative;
     margin-top: 2.5rem;
 
+    .img-gradient::after {
+      content: '';
+      cursor: pointer;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+    }
+
+    .img-gradient:hover::after {
+      background: none rgba(255, 255, 255, 0.75);
+    }
+
+    .img-gradient:hover + .project-title {
+      color: #000;
+    }
+
     img {
       max-width: 100%;
+      display: block;
     }
 
     .project-title {
@@ -121,4 +165,68 @@ section {
       font-weight: 300;
     }
   }
+}
+
+.see-all-btn {
+  background: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+
+  margin-top: 3.5rem;
+  padding: 1rem 3.5rem;
+  border: 1px solid #000;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+}
+
+.see-all-btn:hover {
+  color: #ffffff;
+  background-color: #000;
+}
+
+// Footer section
+footer {
+  margin-top: 10rem;
+  padding-bottom: 6rem;
+  padding-top: 5.5rem;
+  background-color: #000;
+  color: #ffffff;
+  font-size: 1.4rem;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 15.5rem;
+  }
+
+  li {
+    margin-top: 4rem;
+    font-weight: 400;
+    cursor: pointer;
+  }
+}
+
+.social-links {
+  width: 40%;
+  margin: 5rem auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  li {
+    cursor: pointer;
+  }
+}
+
+.copyright {
+  margin-top: 2rem;
+  text-align: center;
+  color: $dk-gray;
 }
