@@ -101,6 +101,23 @@ body {
   display: none;
 }
 
+.page-link {
+  cursor: pointer;
+  position: relative;
+}
+
+.page-link:hover::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: -1rem;
+  height: 0.2rem;
+  width: 2.5rem;
+  background-color: #ffffff;
+}
+
 .scroll-lock {
   margin: 0;
   height: 100%;
@@ -281,7 +298,6 @@ footer .footer-logo {
 .footer-links li {
   margin-top: 4rem;
   font-weight: 400;
-  cursor: pointer;
 }
 
 .social-links {
