@@ -42,14 +42,14 @@ body {
   justify-content: space-between;
   align-items: center;
 
-  #nav-logo {
+  .nav-logo {
     margin-left: 2.5rem;
     width: 14.5rem;
     height: auto;
     z-index: 10;
   }
 
-  .nav-links {
+  .nav-links-mobile {
     position: absolute;
     top: 0;
     left: 0;
@@ -72,6 +72,10 @@ body {
     }
   }
 
+  .nav-links-desktop {
+    display: none;
+  }
+
   #nav-open {
     width: 3rem;
     height: 3rem;
@@ -91,7 +95,7 @@ body {
 }
 
 .nav:not(.mobile-open) {
-  .nav-links {
+  .nav-links-mobile {
     display: none;
   }
 
@@ -303,7 +307,31 @@ footer {
 
 // ----- START OF MEDIA -----
 @media (min-width: 44em) {
-  // First width change
+  // First width change - 704px
+
+  .nav {
+    .nav-logo {
+      margin-left: 16rem;
+    }
+
+    .nav-links-desktop {
+      margin-left: auto;
+      display: flex;
+      color: #ffffff;
+      z-index: 10;
+
+      li {
+        margin-right: 3.5rem;
+      }
+    }
+  }
+
+  .nav:not(.mobile-open) {
+    #nav-open {
+      display: none;
+    }
+  }
+
   .hero {
     background-image: url(../images/desktop/image-hero.jpg);
     backdrop-filter: brightness(0.5);
@@ -359,8 +387,8 @@ footer {
   }
 }
 
-@media (min-width: 73.44em) {
-  // Second width change
+@media (min-width: 73.4375em) {
+  // Second width change - 1,175px
   .intro {
     position: relative;
 
@@ -504,14 +532,25 @@ footer {
   }
 }
 
-@media (max-width: 61.31em) {
+@media (max-width: 61.3125em) {
+  // 981px
   // Only here to ensure hero text margin is balanced at all screen sizes
+
   .hero {
     justify-content: center;
   }
 
   .hero-text {
     margin-left: 0;
+  }
+}
+
+@media (max-width: 62.5rem) and (min-width: 44em) {
+  // Tidy up for the navbar logo at medium screen widths
+  .nav {
+    .nav-logo {
+      margin-left: 5%;
+    }
   }
 }
 // ----- END OF MEDIA -----
