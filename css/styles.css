@@ -339,6 +339,9 @@ footer .footer-logo {
   .nav .nav-links-desktop li {
     margin-right: 3.5rem;
   }
+  .nav .nav-links-desktop li:last-child {
+    margin-right: 12.5rem;
+  }
   .nav:not(.mobile-open) #nav-open {
     display: none;
   }
@@ -547,6 +550,9 @@ footer .footer-logo {
 @media (max-width: 62.5rem) and (min-width: 44em) {
   .nav .nav-logo {
     margin-left: 5%;
+  }
+  .nav .nav-links-desktop li:last-child {
+    margin-right: 7rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */

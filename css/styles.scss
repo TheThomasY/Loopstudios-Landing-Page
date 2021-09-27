@@ -338,6 +338,10 @@ footer {
       li {
         margin-right: 3.5rem;
       }
+
+      li:last-child {
+        margin-right: 12.5rem;
+      }
     }
   }
 
@@ -565,6 +569,12 @@ footer {
   .nav {
     .nav-logo {
       margin-left: 5%;
+    }
+
+    .nav-links-desktop {
+      li:last-child {
+        margin-right: 7rem;
+      }
     }
   }
 }
