@@ -413,8 +413,6 @@ footer {
     margin-left: 16.5rem;
     padding: 4.5rem;
     z-index: 10;
-    // font-size: 7rem;
-    // font-size: 4rem;
     font-size: unquote('clamp(4rem, 1.168rem + 4.05vw, 7rem)');
   }
 
