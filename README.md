@@ -2,17 +2,6 @@
 
 This is a solution to the [Loopstudios landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/loopstudios-landing-page-N88J5Onjw).
 
-## Table of contents
-
-- [Overview](#overview)
-  - [Links](#links)
-  - [Screenshots](#screenshots)
-- [My process](#my-process)
-  - [Built with](#built-with)
-- [Author](#author)
-
-## Overview
-
 ### Links
 
 - Live Site URL: [GitHubPage](https://thethomasy.github.io/Loopstudios-Landing-Page/)
