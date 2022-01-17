@@ -9,7 +9,7 @@ This is a solution to the [Loopstudios landing page challenge on Frontend Mentor
 ### Screenshots
 
 <p float="left">
-  <img src="./screenshots/screenshot-mobile.png" width="300px">
+<!--   <img src="./screenshots/screenshot-mobile.png" width="300px"> -->
   <img src="./screenshots/screenshot-desktop.png">
 </p>
 
