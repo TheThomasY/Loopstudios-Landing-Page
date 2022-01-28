@@ -19,6 +19,7 @@ An example of a company landing page. The site is fully responsive, looks great 
 
 - HTML
 - [Sass](https://sass-lang.com/)
+- Javascript
 
 ## Future Updates 🎁
 
