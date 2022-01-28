@@ -1,35 +1,45 @@
-# Frontend Mentor - Loopstudios landing page solution
+<h1 align="center">Loopstudios Landing Page</h1>
 
-This is a solution to the [Loopstudios landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/loopstudios-landing-page-N88J5Onjw).
+An example of a company landing page. The site is fully responsive, looks great at all screen widths, and includes some subtle and clean animation. I built this using HTML and styled it with Sass.
 
-### Links
+## Links 🌟
 
-- Live Site URL: [GitHubPage](https://thethomasy.github.io/Loopstudios-Landing-Page/)
+- Live site: [Try it out here 💻](https://thethomasy.github.io/Loopstudios-Landing-Page/ 'Live View') 
 
-### Screenshots
+- This is a solution to the [Loopstudios landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/loopstudios-landing-page-N88J5Onjw).
+
+## Screenshots 📷
 
 <p float="left">
+  <img src="./screenshots/screenshot-GIF-desktop.gif">
 <!--   <img src="./screenshots/screenshot-mobile.png" width="300px"> -->
-  <img src="./screenshots/screenshot-desktop.png">
 </p>
 
-## My process
-
-My first steps was building the mobile version of the site. The layout is simpler as all the elements stack. The navigation bar is collapsed on smaller screens and the menu button opens a fullscreen page with the navigation links. On larger screens the links move to the navigation bar.
-
-The desktop layout is slightly more complicated. The hero text and introduction sections are offset and a lot of work went into making sure that they look good across all screen widths. At larger screens the project tiles use grid, instead of flexbox, as it handles 2-dimensional layout more efficiently.
-
-The last step was adding animation to the changing elements. The mobile navigation page uses a simple fade in and height change. For the open/close icon of the navigation I used the following design [Menu "Hamburger" Icon Animations by Jesse Couch](https://codepen.io/designcouch/pen/Atyop) and tweaked them to fit the page. Very useful resource.
-
-### Built with
+## Built With 🛠
 
 - HTML
-- SASS
-- Flexbox
-- Grid
-- Mobile-first workflow
-- JS
+- [Sass](https://sass-lang.com/)
 
-## Author
+## Future Updates 🎁
 
-- Frontend Mentor - [@TheThomasY](https://www.frontendmentor.io/profile/TheThomasY)
+- [ ] Add load animation to page items, e.g 'creations' elements
+
+## Changelog
+
+- **[1.0.0] 17/01/22 Deployment**: Site deployed to GitHub Pages
+
+
+## Author 🧑
+
+**Tom Young**
+
+- [Github Profile 👨‍💻](https://github.com/TheThomasY)
+- [Email ✉](mailto:tomyoungdev@gmail.com?subject=Hi 'Hi!')
+- [LinkedIn 💼](https://www.linkedin.com/in/tom-young5555/)
+- [Dev.to 🖊](https://dev.to/thetomy)
+
+Give a ⭐️ if you like this project!
+
+
+
+
